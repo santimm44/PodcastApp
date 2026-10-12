@@ -11,11 +11,13 @@ The application is intended to be used for offline listening.
 * RSS Link searching
 * play a single podcast episode at a time with no queue
 * Display episode information
-* Download episode on local storage
+
+![MVP Wireframes](docs/images/mvp-wireframes.png)
 
 ### Beyond MVP
 
 * Create queue for podcasts
+* Download episode on local storage
 * subscribe to a podcast
 * create event notifications when new episodes are released
 * create playlists
