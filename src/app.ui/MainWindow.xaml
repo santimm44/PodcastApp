@@ -6,7 +6,47 @@
         xmlns:local="clr-namespace:PodcastApp.UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+  <Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="4*" />
+    </Grid.ColumnDefinitions>
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <!-- Navigation: left column, spanning both rows -->
+    <StackPanel Grid.Column="0"
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Background="LightGray">
+
+        <TextBlock Text="Search" FontSize="18" Margin="16" />
+        <TextBlock Text="Home" FontSize="18" Margin="16" />
+    </StackPanel>
+
+    <!-- Empty main section: upper right -->
+    <Grid Grid.Column="1"
+          Grid.Row="0"
+          Background="White">
 
     </Grid>
+
+    <!-- Player: bottom right -->
+    <Grid Grid.Column="1"
+          Grid.Row="1"
+          Background="Gainsboro">
+
+        <StackPanel Margin="16">
+            <TextBlock Text="Podcast Name"
+                       FontSize="18"
+                       FontWeight="Bold" />
+
+            <TextBlock Text="Podcast Episode Title"
+                       FontSize="14" />
+        </StackPanel>
+    </Grid>
+</Grid>
 </Window>
