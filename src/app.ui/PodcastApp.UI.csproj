@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+<ItemGroup>
+    <Resource Include="Assets\favicon.ico" />
+</ItemGroup>
 
   <PropertyGroup>
+  <ApplicationIcon>Assets\favicon.ico</ApplicationIcon>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows</TargetFramework>
     <Nullable>enable</Nullable>

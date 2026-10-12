@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PodcastApp.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Junction Chatter Club" Height="450" Width="800"
+        Icon="Assets/favicon.ico">
+        
   <Grid>
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
@@ -23,8 +25,8 @@
                 Grid.RowSpan="2"
                 Background="LightGray">
 
-        <TextBlock Text="Search" FontSize="18" Margin="16" />
-        <TextBlock Text="Home" FontSize="18" Margin="16" />
+        <Button Content="Home" FontSize="18" FontWeight="Bold" Margin="16" />
+        <Button Content="Search" FontSize="18" FontWeight="Bold" Margin="16" />
     </StackPanel>
 
     <!-- Empty main section: upper right -->
