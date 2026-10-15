@@ -26,13 +26,15 @@
                 Background="LightGray">
 
         <Button Content="Home" FontSize="18" FontWeight="Bold" Margin="16" />
-        <Button Content="Search" FontSize="18" FontWeight="Bold" Margin="16" />
+        <Button Content="Search" FontSize="18" FontWeight="Bold" Margin="16" Click="Search_Click" />
     </StackPanel>
 
     <!-- Empty main section: upper right -->
     <Grid Grid.Column="1"
           Grid.Row="0"
           Background="White">
+
+          <ContentControl x:Name="MainContent"/>
 
     </Grid>
 
